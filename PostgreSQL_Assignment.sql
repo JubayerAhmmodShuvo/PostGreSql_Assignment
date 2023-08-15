@@ -112,3 +112,11 @@ WHERE (frontend_mark + backend_mark) = (
 DELETE FROM courses
 WHERE course_id NOT IN (SELECT DISTINCT course_id FROM enrollment);
 
+
+-- QUERY 5:
+-- RETRIEVE THE NAMES OF STUDENTS USING A LIMIT OF 2, STARTING FROM THE 3rd STUDENT.
+
+SELECT student_name
+FROM students
+ORDER BY student_id
+LIMIT 2 OFFSET 2;
