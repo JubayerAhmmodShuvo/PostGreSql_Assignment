@@ -75,3 +75,11 @@ VALUES
     (2, 1),
     (3, 2);
 
+    -- Queries
+
+-- QUERY 1:
+
+-- INSERT A NEW STUDENT RECORD
+
+INSERT INTO students (student_name, age, email, frontend_mark, backend_mark, status)
+VALUES ('John Doe', 25, 'john.doe@example.com', 80, 85, NULL);
