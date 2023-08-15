@@ -137,3 +137,11 @@ GROUP BY c.course_name;
 SELECT AVG(age) AS average_age
 FROM students;
 
+
+-- QUERY 8:
+-- RETRIEVE THE NAMES OF STUDENTS WHOSE EMAIL ADDRESSES CONTAIN 'example.com'.
+
+
+SELECT student_name
+FROM students
+WHERE email LIKE '%example.com%';
