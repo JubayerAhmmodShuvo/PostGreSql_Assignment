@@ -14,3 +14,20 @@ CREATE TABLE students (
     backend_mark INTEGER,
     status VARCHAR(255)
 );
+
+SELECT
+  *
+FROM
+  STUDENTS;
+
+  -- courses table
+CREATE TABLE courses (
+    course_id SERIAL PRIMARY KEY,
+    course_name VARCHAR(255),
+    credits INTEGER
+);
+
+SELECT
+  * 
+FROM
+  courses;
