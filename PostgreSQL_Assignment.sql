@@ -1,0 +1,3 @@
+-- Table Creation
+
+CREATE DATABASE UNIVERSITY_DB;
