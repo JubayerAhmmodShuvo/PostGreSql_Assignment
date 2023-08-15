@@ -103,3 +103,12 @@ WHERE (frontend_mark + backend_mark) = (
     FROM students
 );
 
+
+-- QUERY 4:
+
+-- DELETE ALL COURSES THAT HAVE NO STUDENTS ENROLLED.
+
+
+DELETE FROM courses
+WHERE course_id NOT IN (SELECT DISTINCT course_id FROM enrollment);
+
